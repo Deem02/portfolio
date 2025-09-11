@@ -10,6 +10,8 @@ body {
     text-align: center;
 }
 
+
+/* https://youtu.be/Og-YEeCTE7A?si=Oeatz5G8KOPQ_fwD */
 .navbar {
     display: flex;
     align-items: center;
@@ -43,7 +45,8 @@ body {
 }
 
 .navbar-menu {
-    display: flex;
+    /* horizontally in a row. */
+    display: flex; 
     align-items: center;
     gap: 1.5rem;
     list-style: none;
@@ -61,7 +64,8 @@ body {
     white-space: nowrap;
 }
 
-.navbar-container .navbar-menu li a:hover {
+.navbar-container .navbar-menu li a:hover,
+.navbar-container .navbar-menu li a.active {
     color: #4169E1;
     /* https://cssgradient.io/shades-of-blue/ */
     /* background: #90b2f0; */
@@ -70,6 +74,7 @@ body {
 }
 
 .navbar-toggle {
+    /* hides the hamburger button on large screens  */
     display: none;
     background: transparent;
     padding: 10px;
@@ -233,6 +238,7 @@ h5 {
     }
 
     .navbar-container .navbar-menu {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.7rem !important;
@@ -266,6 +272,19 @@ h5 {
 
 }
 
+@media (max-width: 880px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+    .navbar-logo{
+       font-size: 1.7rem; 
+    }
+    .navbar-container .navbar-menu li a{
+        font-size: 1.2rem;
+        padding: 3px 15px;
+    }
+
+}
 
 
 
