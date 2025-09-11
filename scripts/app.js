@@ -28,7 +28,7 @@ const sections = document.querySelectorAll('section')
        const observerOptions = {
                 root: null,
                 rootMargin: '0px',
-                threshold: 1 // trigger when 50% of the section is visible
+                threshold: 0.5 // trigger when 50% of the section is visible
             }
  // Step 2: Create the observer, passing it the NAME of the callback function
             const observer = new IntersectionObserver(handleIntersection, observerOptions)
