@@ -18,7 +18,7 @@ html {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 80px;
     width: 100%;
     /* position: fixed; */
@@ -35,7 +35,7 @@ html {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0;
+    padding: 0 9rem;
     max-width: 1600px;
 }
 
@@ -46,12 +46,13 @@ html {
     text-decoration: none;
     cursor: pointer;
 }
-
+  
 .navbar-menu {
     /* horizontally in a row. */
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     list-style: none;
 }
 
@@ -104,7 +105,7 @@ html {
     /* Center vertically */
     align-items: center;
     /* Center horizontally */
-    min-height: 100vh;
+    min-height: 90vh;
     /* Make it at least as tall as the screen */
 }
 
@@ -114,7 +115,7 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-size: 4rem;
+    font-size: 5rem;
     /* padding: 4rem 2rem; */
     /* Add vertical and horizontal padding */
     /* max-width: 800px; */
@@ -126,7 +127,7 @@ html {
 
 #intro-text {
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     line-height: 1.6;
 }
 
@@ -144,16 +145,36 @@ h5 {
     margin-bottom: 2rem;
 }
 
+#about.page-section{
+    flex-direction: column;
+    justify-content: center;
+}
+.about-text-box{
+    border: 2px solid #8db5ff;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 2rem;
+    max-width: 900px;
+   background-color: rgba(17, 16, 16, 0.05);
+}
+.about-text-box p{
+margin: 0;
+text-align: center;
+font-size: 1.6rem;
+list-style: 1.7;
+}
 
 /* https://prismic.io/blog/css-text-animations */
 .wave-text {
+    font-size: 3rem;
     display: inline-block;
 }
 
 .wave-text span {
     position: relative;
     display: inline-block;
-    font-size: 2.0rem;
+    font-size: 4rem;
+    font-family: 'Epunda Sans', sans-serif;
     font-weight: bold;
     color: #fff;
     animation: subtle-wave 2s ease-in-out infinite;
@@ -222,6 +243,12 @@ h5 {
 
 .wave-text span:nth-child(16) {
     animation-delay: 1.6s;
+}
+.wave-text span:nth-child(17) {
+    animation-delay: 1.7s;
+}
+.wave-text span:nth-child(18) {
+    animation-delay: 1.8s;
 }
 
 
@@ -297,6 +324,14 @@ h5 {
         font-size: 1.2rem;
         padding: 3px 15px;
     }
+
+    .wave-text span {
+        font-size: 2.5rem;
+    }
+   #intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
 
 }
 
