@@ -39,19 +39,19 @@
         <div class="hero-container">
             <h1 class="hero-title">Hello </h1>
             <span class="emoji">👋🏻</span>
-    </div> 
+        </div>
         <p id="intro-text">
-            I'm <span id="name">Deem</span>, a tech enthusiast passionate about developing
+            I'm <span id="name-">Deem</span>, a tech enthusiast passionate about developing
             innovative applications and solutions. <br>
             Check out my Portfolio and let's connect!
         </p>
     </section>
-    
+
     <!-- (introduce yourself, your goals, and background). -->
     <section id="about" class="page-section">
         <h5>About Me</h5>
         <div class="about-text-box">
-            <p>My name is <span id="name">Deem Alqasir</span>, a recent Information Technology graduate from Qassim
+            <p>My name is <span id="name-">Deem Alqasir</span>, a recent Information Technology graduate from Qassim
                 University
                 with First Class Honors. During my studies, I worked on a variety of projects using different
                 tools and technologies, which built a strong foundation for my career.
@@ -64,7 +64,7 @@
         <h5>Projects</h5>
         <div class="projects-box">
             <div class="project-card">
-                <img src="images/soorat.png" alt="">
+                <img src="images/soorat.png" alt="link to github">
                 <h3>Soorat Application</h3>
                 <p>AI-powered calorie tracking app that estimates nutrients from an images, provides personalized
                     tips, tracks daily intake with a progress dashboard, and support multi-language.
@@ -83,7 +83,7 @@
                     with category-based navigation, secure authentication, and real-time event management using
                     Firebase.
                 </p>
-                <div class="btn"> <a href="http://" target="_blank" rel="noopener noreferrer">
+                <div class="btn"> <a href="https://github.com/alanoudtw/Tajwal-Alqassim-App" target="_blank" rel="noopener noreferrer">
                         <img src="images/github.png" alt="Link to github" /></a></div>
             </div>
 
@@ -92,8 +92,28 @@
     </section>
 
     <section id="contact" class="page-section">
-        <h5>Contact</h5>
-
+  <h5>Contact</h5>
+    <div class="form-container" > 
+        <!-- https://www.youtube.com/watch?v=ZtAEXhpTJXk -->
+        <form action="https://formspree.io/f/mgvlqdyp" method="post">
+                <div class="form-group">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" name="user_name" class="form-input" required/>
+                </div>
+                <div class="form-group">
+                    <label for="mail" class="form-label">Email</label>
+                    <input type="email" id="mail" name="user_email" class="form-input" required/>
+                </div>
+                <div class="form-group">
+                    <label for="msg" class="form-label">Message</label>
+                    <textarea id="msg" name="user_message" class='form-textarea' required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Send Message
+                </button>
+            </form>
+</div>
+    
     </section>
     <!-- 
     <div>    
