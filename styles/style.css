@@ -568,6 +568,11 @@ h5 {
         height: 45px;
     }
 
+    .projects-box {
+        grid-template-columns: 1fr; 
+        width: 95%; 
+    }
+
 }
 
 /* https://prismic.io/blog/css-text-animations */
